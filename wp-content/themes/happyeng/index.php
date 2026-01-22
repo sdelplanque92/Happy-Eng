@@ -8,3 +8,6 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php get_header(); ?>
+<?php wp_footer(); ?>
+<?php get_footer(); ?>
