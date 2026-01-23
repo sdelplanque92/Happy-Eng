@@ -1,0 +1,17 @@
+{
+  "apiVersion": 2,
+  "name": "he/text-image-composition",
+  "title": "HE Composition : Texte gauche / Image droite",
+  "category": "design",
+  "icon": "align-pull-right",
+  "description": "Une composition guidée : titre + texte à gauche + image à droite.",
+  "attributes": {
+    "title": { "type": "string", "default": "" },
+    "mediaId": { "type": "number", "default": 0 },
+    "mediaUrl": { "type": "string", "default": "" },
+    "mediaAlt": { "type": "string", "default": "" },
+    "text": { "type": "string", "default": "" }
+  },
+  "editorScript": "file:./build/index.js",
+  "render": "file:./render.php"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "he-one-composition",
+  "private": true,
+  "devDependencies": {
+    "@wordpress/scripts": "^30.0.0"
+  },
+  "scripts": {
+    "build:image-text": "wp-scripts build blocks/image-text/index.js --output-path=blocks/image-text/build",
+    "build:text-image": "wp-scripts build blocks/text-image/index.js --output-path=blocks/text-image/build",
+    "build": "npm run build:image-text && npm run build:text-image",
+    "start:text-image": "wp-scripts start blocks/text-image/index.js --output-path=blocks/text-image/build"
+  }
+}
