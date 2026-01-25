@@ -1,12 +1,14 @@
 import { registerBlockType } from "@wordpress/blocks";
-import { useBlockProps, InspectorControls } from "@wordpress/block-editor";
+import { useBlockProps, InspectorControls, RichText } from "@wordpress/block-editor";
 import { PanelBody, Button, TextControl, TextareaControl } from "@wordpress/components";
 
 const emptyItem = () => ({ url: "", icon: "", title: "", text: "" });
 
 registerBlockType("he/tiles", {
     edit: ({ attributes, setAttributes }) => {
+        const { heading, paragraph } = attributes;
         const items = Array.isArray(attributes.items) ? attributes.items : [emptyItem()];
+
         const blockProps = useBlockProps({ className: "he-tiles-editor" });
 
         const setItem = (index, patch) => {
@@ -50,7 +52,7 @@ registerBlockType("he/tiles", {
                                         value={it.icon || ""}
                                         onChange={(v) => setItem(idx, { icon: v })}
                                         placeholder="server, cloud, cpu…"
-                                        help="Ce champ sert à appliquer une classe (ex: he-icon--server)."
+                                        help="Applique une classe (ex: he-icon--server)."
                                     />
                                     <TextControl
                                         label={`Tuile ${idx + 1} — Titre`}
@@ -74,9 +76,31 @@ registerBlockType("he/tiles", {
 
                 <section {...blockProps}>
                     <div className="he-tiles__container">
+                        <RichText
+                            tagName="h2"
+                            className="he-tiles__title"
+                            placeholder="Titre…"
+                            value={heading}
+                            onChange={(v) => setAttributes({ heading: v })}
+                            allowedFormats={[]}
+                        />
+
+                        <RichText
+                            tagName="p"
+                            className="he-tiles__paragraph"
+                            placeholder="Paragraphe… (Entrée = retour à la ligne)"
+                            value={paragraph}
+                            onChange={(v) => setAttributes({ paragraph: v })}
+                            allowedFormats={["core/bold", "core/italic", "core/link"]}
+                        />
+
                         <div className="he-tiles__grid">
                             {items.map((it, idx) => (
-                                <div className="he-tile" key={idx} style={{ padding: 16, border: "1px solid #ddd", borderRadius: 12 }}>
+                                <div
+                                    className="he-tile"
+                                    key={idx}
+                                    style={{ padding: 16, border: "1px solid #ddd", borderRadius: 12 }}
+                                >
                                     <div style={{ fontSize: 12, opacity: 0.7 }}>
                                         icon: <code>{it.icon || "—"}</code>
                                     </div>
@@ -94,5 +118,5 @@ registerBlockType("he/tiles", {
         );
     },
 
-    save: () => null // bloc dynamique => rendu PHP
+    save: () => null
 });

@@ -4,8 +4,10 @@
   "title": "HE Composition : Tiles",
   "category": "design",
   "icon": "screenoptions",
-  "description": "Grille de tuiles : lien + icon (nom machine) + titre + texte.",
+  "description": "Titre + paragraphe + grille de tuiles (lien + icon + titre + texte).",
   "attributes": {
+    "heading": { "type": "string", "default": "" },
+    "paragraph": { "type": "string", "default": "" },
     "items": {
       "type": "array",
       "default": [
