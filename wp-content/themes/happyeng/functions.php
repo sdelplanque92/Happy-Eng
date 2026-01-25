@@ -34,6 +34,7 @@ add_action( 'wp_enqueue_scripts', function () {
 
     // Theme CSS
     wp_enqueue_style( 'fti-theme',        $uri . '/assets/stylesheets/styles.css', [ 'fti-bootstrap' ], null );
+    wp_enqueue_style( 'theme-custom-css',        $uri . '/custom/css/he-custom.css', [], null );
 
     // Scripts (keep template order)
     wp_enqueue_script( 'fti-jquery',      $uri . '/assets/javascripts/jquery.min.js', [], null, true );
@@ -45,6 +46,9 @@ add_action( 'wp_enqueue_scripts', function () {
     wp_enqueue_script( 'fti-validator',   $uri . '/assets/javascripts/validator.min.js', [ 'fti-jquery' ], null, true );
     wp_enqueue_script( 'fti-contactform', $uri . '/assets/javascripts/contactform.js', [ 'fti-jquery' ], null, true );
     wp_enqueue_script( 'fti-main',        $uri . '/assets/javascripts/main.js', [ 'fti-jquery' ], null, true );
+
+    // Custom Menu
+    wp_enqueue_script( 'theme-custom-menu',        $uri . '/custom/js/menu.js', [], null, true );
 } );
 
 /**

@@ -38,4 +38,6 @@ if (!defined('ABSPATH')) exit;
 add_action('init', function () {
     register_block_type(__DIR__ . '/blocks/image-text');
     register_block_type(__DIR__ . '/blocks/text-image');
+    register_block_type(__DIR__ . '/blocks/bullet-list');
+    register_block_type(__DIR__ . '/blocks/hero');
 });

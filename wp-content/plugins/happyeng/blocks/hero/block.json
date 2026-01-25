@@ -1,0 +1,24 @@
+{
+  "apiVersion": 2,
+  "name": "he/hero-composition",
+  "title": "HE Composition : Hero",
+  "category": "design",
+  "icon": "cover-image",
+  "description": "Hero guidé : H2, H3, texte, 3 boutons.",
+  "attributes": {
+    "heading2": { "type": "string", "default": "" },
+    "heading3": { "type": "string", "default": "" },
+    "text": { "type": "string", "default": "" },
+    "buttons": {
+      "type": "array",
+      "default": [
+        { "label": "Bouton 1", "url": "" },
+        { "label": "Bouton 2", "url": "" },
+        { "label": "Bouton 3", "url": "" }
+      ],
+      "items": { "type": "object" }
+    }
+  },
+  "editorScript": "file:./build/index.js",
+  "render": "file:./render.php"
+}

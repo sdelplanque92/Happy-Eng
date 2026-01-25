@@ -1,0 +1,21 @@
+{
+  "apiVersion": 2,
+  "name": "he/bullet-list",
+  "title": "HE : Liste à puces",
+  "category": "text",
+  "icon": "editor-ul",
+  "description": "Titre + liste à puces éditable.",
+  "attributes": {
+    "title": { "type": "string", "default": "" },
+    "items": {
+      "type": "array",
+      "default": [
+        { "text": "Premier point" },
+        { "text": "Deuxième point" }
+      ],
+      "items": { "type": "object" }
+    }
+  },
+  "editorScript": "file:./build/index.js",
+  "render": "file:./render.php"
+}
