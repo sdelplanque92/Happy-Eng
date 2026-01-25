@@ -9,12 +9,14 @@
     "build:text-image": "wp-scripts build blocks/text-image/index.js --output-path=blocks/text-image/build",
     "build:bullet-list": "wp-scripts build blocks/bullet-list/index.js --output-path=blocks/bullet-list/build",
     "build:hero": "wp-scripts build blocks/hero/index.js --output-path=blocks/hero/build",
+    "build:tiles": "wp-scripts build ./blocks/tiles/index.js --output-path=./blocks/tiles/build",
 
-    "build": "npm run build:image-text && npm run build:text-image && npm run build:bullet-list &&  npm run build:hero",
+    "build": "npm run build:image-text && npm run build:text-image && npm run build:bullet-list && npm run build:hero && npm run build:tiles",
 
     "start:image-text": "wp-scripts start blocks/image-text/index.js --output-path=blocks/image-text/build",
     "start:text-image": "wp-scripts start blocks/text-image/index.js --output-path=blocks/text-image/build",
     "start:bullet-list": "wp-scripts start blocks/bullet-list/index.js --output-path=blocks/bullet-list/build",
-    "start:hero": "wp-scripts start blocks/hero/index.js --output-path=blocks/hero/build"
+    "start:hero": "wp-scripts start blocks/hero/index.js --output-path=blocks/hero/build",
+    "start:tiles": "wp-scripts start ./blocks/tiles/index.js --output-path=./blocks/tiles/build"
   }
 }

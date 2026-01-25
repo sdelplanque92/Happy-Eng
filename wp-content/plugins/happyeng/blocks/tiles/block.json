@@ -1,0 +1,19 @@
+{
+  "apiVersion": 2,
+  "name": "he/tiles",
+  "title": "HE Composition : Tiles",
+  "category": "design",
+  "icon": "screenoptions",
+  "description": "Grille de tuiles : lien + icon (nom machine) + titre + texte.",
+  "attributes": {
+    "items": {
+      "type": "array",
+      "default": [
+        { "url": "", "icon": "server", "title": "Titre", "text": "Texte…" }
+      ],
+      "items": { "type": "object" }
+    }
+  },
+  "editorScript": "file:./build/index.js",
+  "render": "file:./render.php"
+}
