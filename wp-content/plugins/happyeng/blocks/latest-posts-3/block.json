@@ -1,0 +1,10 @@
+{
+  "apiVersion": 2,
+  "name": "he/latest-posts-3",
+  "title": "HE : 3 derniers articles",
+  "category": "widgets",
+  "icon": "admin-post",
+  "description": "Affiche automatiquement les 3 derniers posts du blog.",
+  "editorScript": "file:./build/index.js",
+  "render": "file:./render.php"
+}

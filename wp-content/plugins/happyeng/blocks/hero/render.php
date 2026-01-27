@@ -14,7 +14,10 @@ $buttons = $attributes['buttons'] ?? [];
 
 
                     <?php if ($h2) : ?>
-                        <h2 data-aos="fade-left" data-aos-delay="100" class="aos-init aos-animate"><?php echo esc_html($h2); ?></h2>
+                        <?php
+                            $h2 = preg_replace('#\.([a-zA-Z0-9]+)\.#', '<span class="circle">$1</span>', $h2);
+                        ?>
+                        <h2 data-aos="fade-left" data-aos-delay="100" class="aos-init aos-animate"><?php echo $h2; ?></h2>
                     <?php endif; ?>
 
                     <?php if ($h3) : ?>

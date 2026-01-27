@@ -9,3 +9,9 @@
 .hero .btn-get-started:not(:last-child) {
     margin-right: 10px;
 }
+#main > section:not(:last-child) {
+    padding: 45px 0;
+}
+#main > section:nth-child(odd) {
+    background-color: #fAfAfA;
+}

@@ -41,4 +41,5 @@ add_action('init', function () {
     register_block_type(__DIR__ . '/blocks/bullet-list');
     register_block_type(__DIR__ . '/blocks/hero');
     register_block_type(__DIR__ . '/blocks/tiles');
+    register_block_type(__DIR__ . '/blocks/latest-posts-3');
 });
