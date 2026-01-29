@@ -1,0 +1,20 @@
+{
+  "apiVersion": 2,
+  "name": "he/text-image-bullets",
+  "title": "HE Composition : Texte + Image (gauche) / Puces (droite)",
+  "category": "design",
+  "icon": "columns",
+  "description": "Titre + texte + image à gauche + liste à puces (bloc existant) à droite.",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "title": { "type": "string", "default": "" },
+    "text": { "type": "string", "default": "" },
+    "mediaId": { "type": "number", "default": 0 },
+    "mediaUrl": { "type": "string", "default": "" },
+    "mediaAlt": { "type": "string", "default": "" }
+  },
+  "editorScript": "file:./build/index.js",
+  "render": "file:./render.php"
+}

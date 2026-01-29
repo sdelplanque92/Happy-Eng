@@ -12,6 +12,8 @@
     "build:tiles": "wp-scripts build ./blocks/tiles/index.js --output-path=./blocks/tiles/build",
     "build:latest-posts-3": "wp-scripts build ./blocks/latest-posts-3/index.js --output-path=./blocks/latest-posts-3/build",
     "build:text-bullets-image": "wp-scripts build ./blocks/text-bullets-image/index.js --output-path=./blocks/text-bullets-image/build",
+    "build:text-image-bullets": "wp-scripts build ./blocks/text-image-bullets/index.js --output-path=./blocks/text-image-bullets/build",
+    "build:title-text": "wp-scripts build ./blocks/title-text/index.js --output-path=./blocks/title-text/build",
 
     "build": "npm run build:image-text && npm run build:text-image && npm run build:bullet-list && npm run build:hero && npm run build:tiles && npm run build:latest-posts-3 && npm run build:text-bullets-image",
 
@@ -21,6 +23,8 @@
     "start:hero": "wp-scripts start blocks/hero/index.js --output-path=blocks/hero/build",
     "start:tiles": "wp-scripts start ./blocks/tiles/index.js --output-path=./blocks/tiles/build",
     "start:latest-posts-3": "wp-scripts start ./blocks/latest-posts-3/index.js --output-path=./blocks/latest-posts-3/build",
-    "start:text-bullets-image": "wp-scripts start ./blocks/text-bullets-image/index.js --output-path=./blocks/text-bullets-image/build"
+    "start:text-bullets-image": "wp-scripts start ./blocks/text-bullets-image/index.js --output-path=./blocks/text-bullets-image/build",
+    "start:text-image-bullets": "wp-scripts start ./blocks/text-image-bullets/index.js --output-path=./blocks/text-image-bullets/build",
+    "start:title-text": "wp-scripts start ./blocks/title-text/index.js --output-path=./blocks/title-text/build"
   }
 }

@@ -14,7 +14,7 @@ if (!$q->have_posts()) {
 }
 ?>
 
-<section id="recent-posts" class="recent-posts">
+<section class="recent-posts">
     <div class="container" data-aos="fade-up">
         <div class="section-header">
             <h2>Derniers articles</h2>

@@ -7,7 +7,7 @@ $mediaAlt = $attributes['mediaAlt'] ?? '';
 $text     = $attributes['text']     ?? '';
 
 ?>
-<section id="about" class="about">
+<section class="about">
     <div class="container" data-aos="fade-up">
         <?php if ($title) : ?>
             <div class="section-header">

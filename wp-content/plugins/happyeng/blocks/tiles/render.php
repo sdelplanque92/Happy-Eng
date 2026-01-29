@@ -8,7 +8,7 @@ if (!is_array($items)) $items = [];
 
 ?>
 
-<section id="meet" class="about">
+<section class="about">
     <div class="container" data-aos="fade-up">
         <div class="section-header" style="text-align: left;">
             <?php if ($heading) : ?>
@@ -28,9 +28,9 @@ if (!is_array($items)) $items = [];
                         $title = $item['title'] ?? '';
                         $text  = $item['text'] ?? '';
 
-                        if (!$url) continue;
+                        if (!$url) $url = '';
                         ?>
-                        <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="col-xl-4 col-md-4">
                             <div class="icon-box">
                                 <div class="icon"><i class="<?php print($icon); ?>"></i></div>
                                 <h4 class="title"><a href="<?php print($url); ?>" class="stretched-link"><?php print($title); ?></a></h4>

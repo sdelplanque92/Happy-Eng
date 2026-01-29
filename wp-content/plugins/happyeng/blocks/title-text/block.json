@@ -1,0 +1,17 @@
+{
+  "apiVersion": 2,
+  "name": "he/title-text",
+  "title": "HE Composition : Titre + Texte",
+  "category": "text",
+  "icon": "editor-textcolor",
+  "description": "Un titre et un texte.",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "title": { "type": "string", "default": "" },
+    "text": { "type": "string", "default": "" }
+  },
+  "editorScript": "file:./build/index.js",
+  "render": "file:./render.php"
+}

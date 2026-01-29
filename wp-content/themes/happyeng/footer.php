@@ -6,7 +6,7 @@
                     <div class="footer-widget">
                         <div class="footer-logo">
                             <a href="index.html" class="logo d-flex align-items-center">
-                                <h1>Grayson<span>.</span></h1>
+                                <h1>HappyEng<span>.</span></h1>
                             </a>
                         </div>
                         <div class="footer-text">
