@@ -10,15 +10,17 @@ if (!is_array($items)) $items = [];
 
 <section class="about">
     <div class="container" data-aos="fade-up">
-        <div class="section-header" style="text-align: left;">
-            <?php if ($heading) : ?>
-                <h2 class="he-tiles__title"><?php echo esc_html($heading); ?></h2>
-            <?php endif; ?>
+        <?php if ('' != $heading && '' != $paragraph): ?>
+            <div class="section-header" style="text-align: left;">
+                <?php if ($heading) : ?>
+                    <h2 class="he-tiles__title"><?php echo esc_html($heading); ?></h2>
+                <?php endif; ?>
 
-            <?php if ($paragraph) : ?>
-                <p class="he-tiles__paragraph"><?php echo wp_kses_post($paragraph); ?></p>
-            <?php endif; ?>
-        </div>
+                <?php if ($paragraph) : ?>
+                    <p class="he-tiles__paragraph"><?php echo wp_kses_post($paragraph); ?></p>
+                <?php endif; ?>
+            </div>
+        <?php endif; ?>
         <div class="top-icon-box position-relative">
             <div class="container position-relative">
                 <div class="row gy-4">
