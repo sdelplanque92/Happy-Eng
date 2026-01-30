@@ -14,8 +14,9 @@
     "build:text-bullets-image": "wp-scripts build ./blocks/text-bullets-image/index.js --output-path=./blocks/text-bullets-image/build",
     "build:text-image-bullets": "wp-scripts build ./blocks/text-image-bullets/index.js --output-path=./blocks/text-image-bullets/build",
     "build:title-text": "wp-scripts build ./blocks/title-text/index.js --output-path=./blocks/title-text/build",
+    "build:category-children-carousel": "wp-scripts build ./blocks/category-children-carousel/index.js --output-path=./blocks/category-children-carousel/build",
 
-    "build": "npm run build:image-text && npm run build:text-image && npm run build:bullet-list && npm run build:hero && npm run build:tiles && npm run build:latest-posts-3 && npm run build:text-bullets-image",
+    "build": "npm run build:image-text && npm run build:text-image && npm run build:bullet-list && npm run build:hero && npm run build:tiles && npm run build:latest-posts-3 && npm run build:text-bullets-image && npm run build:category-children-carousel",
 
     "start:image-text": "wp-scripts start blocks/image-text/index.js --output-path=blocks/image-text/build",
     "start:text-image": "wp-scripts start blocks/text-image/index.js --output-path=blocks/text-image/build",
@@ -25,6 +26,7 @@
     "start:latest-posts-3": "wp-scripts start ./blocks/latest-posts-3/index.js --output-path=./blocks/latest-posts-3/build",
     "start:text-bullets-image": "wp-scripts start ./blocks/text-bullets-image/index.js --output-path=./blocks/text-bullets-image/build",
     "start:text-image-bullets": "wp-scripts start ./blocks/text-image-bullets/index.js --output-path=./blocks/text-image-bullets/build",
-    "start:title-text": "wp-scripts start ./blocks/title-text/index.js --output-path=./blocks/title-text/build"
+    "start:title-text": "wp-scripts start ./blocks/title-text/index.js --output-path=./blocks/title-text/build",
+    "start:category-children-carousel": "wp-scripts start ./blocks/category-children-carousel/index.js --output-path=./blocks/category-children-carousel/build"
   }
 }

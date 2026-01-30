@@ -1,0 +1,17 @@
+{
+  "apiVersion": 2,
+  "name": "he/category-children-carousel",
+  "title": "HE : Carrousel catégories enfants",
+  "category": "widgets",
+  "icon": "images-alt2",
+  "description": "Carrousel dont chaque slide pointe vers les enfants d’une catégorie.",
+  "supports": { "html": false },
+  "attributes": {
+    "termId": { "type": "number", "default": 0 },
+    "title": { "type": "string", "default": "" },
+    "parentTermId": { "type": "number", "default": 0 },
+    "hideEmpty": { "type": "boolean", "default": false }
+  },
+  "editorScript": "file:./build/index.js",
+  "render": "file:./render.php"
+}

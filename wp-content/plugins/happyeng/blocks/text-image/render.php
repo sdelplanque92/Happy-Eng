@@ -5,13 +5,14 @@ $title    = $attributes['title']    ?? '';
 $mediaUrl = $attributes['mediaUrl'] ?? '';
 $mediaAlt = $attributes['mediaAlt'] ?? '';
 $text     = $attributes['text']     ?? '';
+$classes   = get_block_wrapper_attributes();
 
 ?>
 <section class="about" id="<?php print(sanitize_title($title)); ?>">
     <div class="container" data-aos="fade-up">
         <?php if ($title) : ?>
             <div class="section-header">
-                <h2><?php echo esc_html($title); ?></h2>
+                <h2 <?php print($classes); ?>><?php echo esc_html($title); ?></h2>
             </div>
         <?php endif; ?>
 
