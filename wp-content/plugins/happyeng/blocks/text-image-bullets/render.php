@@ -10,7 +10,7 @@ $mediaAlt = $attributes['mediaAlt'] ?? '';
 $content = $content ?? '';
 
 ?>
-<section class="he-tib">
+<section class="he-tib" id="<?php print(sanitize_title($title)); ?>">
     <div class="he-tib__container">
 
         <?php if ($title) : ?>

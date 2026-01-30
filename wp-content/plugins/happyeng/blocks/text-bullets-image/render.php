@@ -11,7 +11,7 @@ $mediaAlt = $attributes['mediaAlt'] ?? '';
 if (!is_array($items)) $items = [];
 ?>
 
-<section class="skills">
+<section class="skills" id="<?php print(sanitize_title($title)); ?>">
         <div class="container" data-aos="fade-up">
             <div class="section-header">
                 <?php if ($title) : ?>

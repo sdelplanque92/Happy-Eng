@@ -4,16 +4,17 @@ if (!defined('ABSPATH')) exit;
 $heading   = $attributes['heading'] ?? '';
 $paragraph = $attributes['paragraph'] ?? '';
 $items     = $attributes['items'] ?? [];
+$classes   = get_block_wrapper_attributes();
 if (!is_array($items)) $items = [];
 
 ?>
 
-<section class="about">
+<section class="about" id="<?php if ($heading) print(sanitize_title($heading)); ?>">
     <div class="container" data-aos="fade-up">
-        <?php if ('' != $heading && '' != $paragraph): ?>
+        <?php if ('' != $heading || '' != $paragraph): ?>
             <div class="section-header" style="text-align: left;">
                 <?php if ($heading) : ?>
-                    <h2 class="he-tiles__title"><?php echo esc_html($heading); ?></h2>
+                    <h2 <?php print($classes); ?>><?php echo esc_html($heading); ?></h2>
                 <?php endif; ?>
 
                 <?php if ($paragraph) : ?>
